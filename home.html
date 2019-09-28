@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dell homepage-Compu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="jquery-3.3.1.js"></script>
+<script>
+    $(function (){
+        $('#tab1').click(function () {
+            $('#tab1_content').show();
+            $('#tab2_content').hide();
+            $('#tab3_content').hide();
+            $(this).addClass('active');
+
+            $('#tab1').removeClass('class');
+
+        });
+        $('#cancel1-icon').click(function () {
+            $('#tab1_content').hide();
+        });
+
+        $('#cancel2-icon').click(function () {
+            $('#tab2_content').hide();
+        });
+
+        $('#cancel3-icon').click(function () {
+            $('#tab3_content').hide();
+        });
+
+            $('#tab2').click(function () {
+            $('#tab2_content').show();
+            $('#tab1_content').hide()
+            $('#tab3_content').hide()
+
+        });
+
+        $('#tab3').click(function () {
+            $('#tab3_content').show();
+            $('#tab1_content').hide()
+            $('#tab2_content').hide()
+
+        });
+    });
+
+
+</script>
+</head>
+<body>
+<div id="container">
+    <header id="header">
+        <div id="header2">
+
+           <!-- <a href="#">Premier Login</a>
+            <a href="#" >Partner Program Sign In</a>
+            <p id="a1">|</p>-->
+
+            <ul>
+                <li><a href="#">Premier Login</a></li>
+                <li> <a href="#" >Partner Program Sign In</a></li>
+                <li> <p id="a1">|</p></li>
+            </ul>
+        </div>
+
+
+    </header>
+
+   <!-- <div id="menue">
+        <ul>
+            <li><img src="P.JPG" width="30" height="20"></li>
+            <li><a href="#" style="color:white">Home </a>
+                <ul>
+                    <li><a href="#" id="homeborder"> Laptops & Ultrabooks </a></li><li>
+                    <a href="#" id="homeborder2"> Desktops & All-in-Ones	 </a></li>
+
+                </ul>
+            </li>
+
+            <li><a href="#"  style="color:white">For Work</a>
+                <ul>
+                    <li><a href="#" id="Workborder"> Tablets, Laptops & Mobile  </a></li>
+                </ul>
+            </li>
+            <li><a href="#"  style="color:white"> Support</a>
+
+                <ul>
+                    <li><a href="#" id="Supportborder">Contact Us</a></li>
+                </ul>
+
+            </li>
+        </ul>
+
+    </div>-->
+
+    <div id="menue">
+        <ul id="tabs">
+            <li><img src="P.JPG" width="30" height="30" ></li>
+
+            <li id="tab1" class="acive" style="color:white">For Home</li>
+            <li id="tab2" style="color:white" >For Work</li>
+            <li id="tab3" style="color:white">Support</li>
+        </ul>
+    </div>
+
+        <div id="tab1_content">
+            <ul>
+                <li><a href="#" class="homeborder"> Laptops & Ultrabooks </a></li>
+                <li><a href="#" class="homeborder"> Desktops & All-in-Ones	 </a></li>
+
+              <li>  <a href="#" class="homeborder"> Tablets	 </a></li>
+              <li>  <a href="#" class="homeborder">   Accessories		 </a></li>
+
+                <span id="cancel1-icon" >×</span>
+            </ul>
+
+        </div>
+
+        <div id="tab2_content">
+            <ul>
+                <li><a href="#" > Tablets, Laptops & Mobile Workstations </a></li>
+                <li><a href="#" > Desktops & AIO	 </a></li>
+              <li>  <a href="#" > Workstations	 </a></li>
+              <li>  <a href="#" > Services & Solutions </a></li>
+
+                <span id="cancel2-icon" >×</span>
+
+            </ul>
+
+        </div> <div id="tab3_content">
+            <ul>
+                <li><a href="#" > Support by Product</a></li
+                ><li><a href="#" > Support Library	 </a></li>
+             <li>   <a href="#" > Order Support	 </a></li>
+                <li><a href="#" > Contact Us	 </a></li>
+                <span id="cancel3-icon" >×</span>
+
+
+            </ul>
+
+        </div>
+
+    <div id="menue2">
+      <nav>
+          <input type="checkbox">
+            <a href="#">How to Buy</a>
+      </nav>
+
+    </div>
+
+    <div id="slider">
+        <img src="home.JPG" width="970px" >
+
+    </div>
+
+    <div id="content1">
+        <p id="title1" >Dell Services</p>
+        <img src="pc1.JPG" id="img1content">
+
+        <ul>
+            <li id="work"> <a href="#"> <span id="forwork1">For Work:</span> <span id="forwork2"> Explore our full suite of services. For ProSupport call: 8000 4302</span></a></li>
+            <li></li>
+        </ul>
+
+        <ul>
+            <li id="Home"> <a href="#"> <span id="forHome1">For Home:</span> <span id="forHome2"> Explore our consumer services. For Dell Technical support call: 8000 4303.</span></a></li>
+            <li></li>
+        </ul>
+
+    </div>
+
+    <div id="content2">
+    <p id="title2" >Dell Headlines</p>
+
+      <img src="pc2.JPG" id="img2content">
+
+          <ul>
+              <li id="ph1"> <a href="#"> Saensuk IoT project with Dell and Intel</a></li>
+              <li></li>
+          </ul>
+        <ul>
+            <li id="ph2"> <a href="#">From High Potential to High Growth</a></li>
+            <li></li>
+        </ul>
+
+        <ul>
+            <li id="ph3"> <a href="#"> Alienware Celebrates 20 Years of Gamers First</a></li>
+            <li></li>
+        </ul>
+
+        <ul>
+            <li id="ph4"> <a href="#">Dell Enables Customers to Maximize Performance</a></li>
+            <li></li>
+        </ul>
+
+    </div>
+
+    <div id="content3">
+        <p id="title3" >Dell Products</p>
+        <img src="pc3.JPG" id="img3content">
+        <ul>
+            <li id="ph21"> <a href="#">Inspiron laptops - Now powered by 7th Gen Intel®  CoreTM  processor. </a></li>
+            <li></li>
+        </ul>
+        <br>
+        <ul>
+            <li id="ph22"> <a href="#"> <span id="Products1">Products</span> <span id="Products2"> for Home</span></a></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li id="ph23"> <a href="#"> <span id="Products21">Products</span> <span id="Products22">for Work</span></a></li>
+            <li></li>
+        </ul>
+
+
+    </div>
+
+
+<div id="footer">
+    <footer id="footerminue1">
+     <ul>
+         <li id="footerminue1ph1">Do more with Dell</li>
+         <li id="footerminue1ph2" ><a href="">partner program</a></li>
+         <li id="footerminue1ph3" ><a href="">TechCenter</a></li>
+
+     </ul>
+
+
+    </footer>
+
+    <footer id="footerminue2">
+        <ul>
+            <li id="footerminue1ph21">About Dell</li>
+            <li id="footerminue1ph22" ><a href="">Company Information</a></li>
+            <li id="footerminue1ph23" ><a href="">Corporate Social Responsibilit</a></li>
+            <li id="footerminue1ph24" ><a href="">Customer Engagement</a></li>
+            <li id="footerminue1ph25" ><a href="">Careers</a></li>
+            <li id="footerminue1ph26" ><a href="">Dell Technologies</a></li>
+
+
+        </ul>
+
+    </footer>
+
+    <footer  id="footerminue3">
+        <ul>
+            <li id="footerminue1ph31">Legal</li>
+            <li id="footerminue1ph32" ><a href="">Ads & Emails</a></li>
+            <li id="footerminue1ph33" ><a href="">Privacy Statement</a></li>
+            <li id="footerminue1ph34" ><a href="">Legal & Regulatory</a></li>
+            <li id="footerminue1ph35" ><a href="">Terms & Conditions</a></li>
+
+
+
+        </ul>
+
+    </footer>
+
+
+
+    <footer  id="footerminue4">
+        <ul>
+            <li id="footerminue1ph41">Community</li>
+            <li id="footerminue1ph42" ><a href="">The Dell Community</a></li>
+            <li id="footerminue1ph43" ><a href="">Read Our Blog</a></li>
+            <li id="footerminue1ph44" ><a href="">Events</a></li>
+
+
+
+        </ul>
+
+    </footer>
+
+
+
+
+
+
+</div>
+
+</div>
+</body>
+</html>
